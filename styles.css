@@ -1,0 +1,241 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.stuff-list {
+	width: 94%;
+	margin: 3%;
+	margin-bottom: 5%;
+}
+.stuff-pics {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 3%;
+}
+
+.stuff{
+	margin-right: 5%;
+	width: 30%;
+	height: 100%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.stuff-img h5 {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	text-align: center;
+	font-size: 80%;
+	transform: translate(-170%);
+	transition: all 0.3s cubic-bezier(0, -0.18, 0.58, 0);
+}
+.stuff:hover .stuff-img h5{
+	transform: translate(0%);
+}
+.stuff-name {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	
+}
+.stuff-3 {
+	margin-right: 0;
+	float: right;
+}
+.stuff-img {
+	width: 200px;
+	height: 200px;
+	max-width: 100%;
+	border-radius: 50%;
+	margin: auto;
+}
+ .stuff-img img{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	border-radius: 50%;
+	margin: auto;
+}
+.stuff-list:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.stuff-pics:after, .stuff:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+
+@media (max-width: 768px) {
+	.info {
+		font-size: 90%;
+		width: 90%;
+		margin: 5%;
+	}
+	.info h1 {
+		font-size: 200%;
+	}
+	.info-1, .info-2 {
+		margin: 0%;
+	}
+	.content h1 {
+		font-size: 120%;
+		text-align: center;
+	}
+	.content-1, .content-2 {
+		float: none;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10%;
+	}
+	.content-1-img, .content-2-img {
+		width: 100%;
+	}
+	.stuff {
+		width: 100%;
+	}
+	.stuff-img  h5{
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+}
+.banner {
+	height: 80%;
+	background: url("banner-1.jpg")no-repeat 50% 50%;
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+}
+.title {
+	height: 100px;
+	width: 100%;
+	margin-top: -100px;
+	top: 50%;
+	position: absolute;
+	background: url("bus.png")no-repeat;
+	background-position: center;
+	
+	
+}
+.logo {
+	height: 100px;
+	width: 90%;
+	top: 0;
+	background-position: left;
+	background: url("elephant.png") no-repeat;
+	margin-left: 8px;
+	position: absolute;
+	
+	
+}
+
+.info {
+	width: 80%;
+	margin: 5% 10%;
+	padding: 0;
+	font-size: 100%;
+	font-family: 'Montserrat', sans-serif;
+	overflow: hidden;
+}
+.info h1 {
+	font-size: 150%;
+	text-align: center;
+	padding-right: 5%;
+	padding-left: 5%;
+	font-family: 'Montserrat', sans-serif;
+}
+.info-1, .info-2 {
+	width: 100%;
+	margin-bottom: 5%;
+}
+.info-1:after, .info-2:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+.info-1, .info-2 {
+	transition: all 0.3s cubic-bezier(0, -0.18, 0.58, 0);
+}
+.info-2 {
+	margin-left: 100%;
+}
+.info-1 {
+	margin-left: -100%;
+}
+.content-1 {
+	margin-right: 2%;
+	float: left;
+	width: 35%;
+}
+.content-1-img {
+	float: right;
+	width: 63%;
+	margin: 0;
+	border-radius: 50%;
+}
+.content-1-img img{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	
+}
+.content-2-img img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+.content-2 {
+	float: right;
+	width: 35%;
+	margin-left: 2%;
+	margin-right: 0;
+}
+.content-2-img {
+	float: left;
+	width: 63%;
+	margin-right: -10%;
+}
+
+.content h1 {
+	font-size: 110%;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.content p {
+	text-align: justify;
+}
+
+.bg {
+	height: 80%;
+	width: 100%;
+	background: url("banner-1.jpg")no-repeat 50% 50%;
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+	
+}
+.bg p {
+	width: 90%;
+	padding: 5%;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgba(255, 255, 255, 0.47);
+}
+
+.footer {
+	height: 800px;
+	background-color: #000000;
+}
