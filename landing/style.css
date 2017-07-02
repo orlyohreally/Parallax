@@ -76,7 +76,7 @@ header .button {
 header .header .phone {
 	height: 110%;
 	width: auto;
-	left: 60%;
+	right: 10%;
 	top: 15%;
 	position: absolute;
 }
@@ -240,20 +240,118 @@ header .header .phone {
 
 
 #reviews {
-	margin: 0% 10%;
+	width: 100%;
+	background: rgba(134, 134, 134, 0.17);
+	padding-top: 5%;
 }
 #reviews h1 {
+	margin: 0% 10%;
 	font-size: 200%;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
+	
 }
 #reviews .reviews {
-	width: 100%;
+	width: 80%;
+	margin: 3% 10%;
+	margin-bottom: 0;
+	display: block;
 }
 .reviews .review {
-	width: 30%;
+	width: 32%;
 	margin-right: 1%;
+	display: inline-block;
+	vertical-align: top;
 }
 .reviews .review:last-child {
+	margin-right: 0;
+}
+.review h2 {
+	margin: 0;
+}
+.review h2 img {
+	width: 40px;
+	height: 40px;
+	font-size: 90%;
+	border-radius: 50%;
+	margin-right: 2%;
+}
+.reviews .review p {
+	background: #ffffff;
+	padding: 5%;
+	font-size: 80%;
+	min-height: 100px;
+}
+#reviews .nav {
+	margin: 0 40%;
+	float: right;
+	width: 10%;
+}
+#reviews .dot {
+	height: 10px;
+	width: 10px;
+	border: 1px solid #714505;
+	border-radius: 50%;
+	background: rgba(241, 148, 13, 0.58);
+	margin-right: 1%;
+	float: left;
+	
+}
+#reviews .dot-1 {
+	background: #f18f00;
+}
+#reviews:after {
+	content: '';
+	clear: both;
+	display: block;
+	padding-top: 2%;
+}
+
+
+footer {
+	width: 100%;
+	background: url('asset/banner.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	margin: 0;
+	color: #ffffff;
+	display: block;
+}
+footer .footer {
+	background: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+footer .footer h1 {
+	margin: 0% 10%;
+	padding: 5% 0;
+}
+.footer .contacts {
+	width: 40%;
+	margin-left: 10%;
+	font-size: 80%;
+	display: inline-block;
+}
+.contacts .contact h2{
+	margin: 0;
+	padding: 0;
+}
+.footer .feedback {
+	width: 40%;
+	display: inline-block;
+}
+.feedback label {
+	padding: 5px;
+	width: 50%;
+	margin:0;
+}
+.feedback input {
+	width: 50%;
+	background: transparent;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-radius: 10%;
+}
+.feedback input:nth-child(2n) {
 	margin-right: 0;
 }
