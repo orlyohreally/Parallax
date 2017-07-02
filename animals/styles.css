@@ -153,6 +153,8 @@ html, body {
 	background-size: cover;
 	position: relative;
 	background-attachment: fixed;
+	-ms-background-attachment: fixed;
+	-webkit-background-attachment: fixed;
 }
 .title {
 	height: 100px;
