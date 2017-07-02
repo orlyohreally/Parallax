@@ -60,7 +60,8 @@ $(document).ready(function(){
 			if(list.active < list.total)
 				list.active++;
 		}
-		if($(window).innerWidth < 767) {
+		console.log($(window).innerWidth());
+		if($(window).innerWidth() <= 767) {
 			if(list.active > 1) {
 				$(primaryClass + " .left-arrow").css({
 					'display': 'block'
