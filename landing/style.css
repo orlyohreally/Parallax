@@ -320,38 +320,78 @@ footer .footer {
 	background: rgba(0, 0, 0, 0.75);
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding-bottom: 5%;
+	
 }
 footer .footer h1 {
-	margin: 0% 10%;
 	padding: 5% 0;
+	margin: 0 10%;
 }
-.footer .contacts {
-	width: 40%;
+#contacts {
+	width: 30%;
 	margin-left: 10%;
 	font-size: 80%;
 	display: inline-block;
+	vertical-align: top;
 }
 .contacts .contact h2{
 	margin: 0;
 	padding: 0;
 }
 .footer .feedback {
-	width: 40%;
+	margin: 0;
+	margin-right: 10%;
+	width: 49%;
 	display: inline-block;
 }
-.feedback label {
-	padding: 5px;
-	width: 50%;
-	margin:0;
+.footer .feedback form {
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.feedback h2 {
+	font-size: 130%;
 }
 .feedback input {
-	width: 50%;
 	background: transparent;
-	padding: 5px;
+	padding: 5px 10px;
+	margin: 0;
+	margin-top: 5px;
 	margin-bottom: 5px;
 	border-radius: 10%;
+	width: 100%;
+	box-sizing: border-box;
+	color: #ffffff;
 }
-.feedback input:nth-child(2n) {
+.feedback .message {
+	width: 100%;
 	margin-right: 0;
+	background: transparent;
+}
+.feedback .message textarea{
+	width: 100%;
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	box-sizing: border-box;
+	background: transparent;
+	resize: none;
+}
+.feedback div {
+	display: inline-block;
+	width: 48%;
+	margin-right: 2%;
+	text-align: left;
+}
+.feedback div:nth-child(2n) {
+	margin-right: 0;
+	
+}
+.feedback form .button {
+	padding: 10px;
+	background: #f18f00;
+	font-size: 110%;
+	border-radius: 10%;
+	text-decoration: none;
+	color: #000000;
 }
