@@ -40,7 +40,7 @@ header .logo {
 	margin: 0;
 	padding: 2% 10%;
 	font-family: 'Russo One', sans-serif;
-	font-size: 120%;
+	font-size: 150%;
 	color: #f18f00;
 }
 header .description {
@@ -74,9 +74,10 @@ header .button {
 	color: #000000;
 }
 header .header .phone {
-	height: 110%;
+	height: 115%;
 	width: auto;
-	right: 10%;
+	max-width: 25%;
+	right: 15%;
 	top: 15%;
 	position: absolute;
 }
@@ -275,6 +276,7 @@ header .header .phone {
 	font-size: 90%;
 	border-radius: 50%;
 	margin-right: 2%;
+	vertical-align: bottom;
 }
 .reviews .review p {
 	background: #ffffff;
@@ -320,11 +322,11 @@ footer .footer {
 	background: rgba(0, 0, 0, 0.75);
 	width: 100%;
 	margin: 0;
-	padding-bottom: 5%;
+	padding-bottom: 3%;
 	
 }
 footer .footer h1 {
-	padding: 5% 0;
+	padding: 3% 0;
 	margin: 0 10%;
 }
 #contacts {
@@ -334,9 +336,22 @@ footer .footer h1 {
 	display: inline-block;
 	vertical-align: top;
 }
-.contacts .contact h2{
+.contacts .contact {
+	display: block;
+	margin: 20px;
+	margin-left: 0;
+}
+.contacts .contact img {
+	width: 40px;
+	vertical-align: middle;
+	margin-right: 15px;
+	display: inline-block;
+}
+.contacts .contact h3{
 	margin: 0;
 	padding: 0;
+	font-size: 110%;
+	display: inline-block;
 }
 .footer .feedback {
 	margin: 0;
