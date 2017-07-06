@@ -1,4 +1,9 @@
 $(window).ready(function(){
+	$(".menu a").click(function(){
+		$("header .menu a").css({
+			'display':'none'
+		})
+	})
 	$(".toggle").click(function(){
 		if($("header .menu a")[0].style.display == 'none' || $("header .menu a")[0].style.display == '') {
 			$("header .menu a").each(function(i) {
