@@ -20,9 +20,13 @@ header .menu {
 	right: 10%;
 	display: block;
 }
+header .menu .toggle {
+	display: none;
+}
 header .menu a {
 	display: inline-block;
 	padding: 20px 10px;
+	padding-left: 0;
 	vertical-align: middle;
 	font-size: 100%;
 	color: #ffffff;
@@ -76,7 +80,6 @@ header .button {
 header .header .phone {
 	height: 115%;
 	width: auto;
-	max-width: 25%;
 	right: 15%;
 	top: 15%;
 	position: absolute;
@@ -93,6 +96,7 @@ header .header .phone {
 #service .services {
 	display: block;
 	text-align: center;
+	margin-top: 5%;
 }
 .services .service {
 	width: 31%;
@@ -409,4 +413,67 @@ footer .footer h1 {
 	border-radius: 10%;
 	text-decoration: none;
 	color: #000000;
+}
+@media (max-width: 768px) {
+	header .menu {
+		width: 100%;
+		left: 0;
+		display: block;
+		margin: 0;
+		background: #000000;
+		overflow: hidden;
+		position: fixed;
+		z-index: 100;
+	}
+	
+	header .menu a {
+		width: 100%;
+		margin: 0;
+		padding: 10px;
+		display: none;
+		float: none;
+	}
+	header .menu a:hover, header .menu .toggle:hover {
+		background: #232323;
+	}
+	header .header .phone {
+		display: none;
+	}
+	header .menu .toggle {
+		display: block;
+		height: 30px;
+		width: auto;
+		padding: 5px;
+		margin: 5px;
+		margin-top: 10px;
+	}
+	header .header .description h1, header .header .description p {
+		width: 100%;
+	}
+	
+	.reasons .reason, .reasons .reason h2 span {
+		font-size: 80%;
+	}
+	#contacts {
+		width: 80%;
+	}
+	#contacts .contacts .contact {
+		margin: 0;
+		width: 30%;
+		font-size: 90%;
+		margin: 0%;
+		display: inline-block;
+	}
+	#contacts .contacts .contact:last-child {
+		margin-right: 0;
+	}
+	.contacts .contact img {
+		margin-right: 2px;
+		height: 40px;
+		width: auto;
+	}
+	footer .footer .feedback {
+		width: 80%;
+		margin: 0 10%;
+	}
 }

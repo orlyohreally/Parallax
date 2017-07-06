@@ -1,4 +1,16 @@
 $(window).ready(function(){
+	$(".toggle").click(function(){
+		if($("header .menu a")[0].style.display == 'none' || $("header .menu a")[0].style.display == '') {
+			$("header .menu a").each(function(i) {
+				$("header .menu a")[i].style.display = 'block';
+			})
+		}
+		else if($("header .menu a")[0].style.display != 'none') {
+			$("header .menu a").each(function(i) {
+				$("header .menu a")[i].style.display = 'none';
+			})
+		}
+	})
 	
 	$('.reason h2 img').each(function(i){
 		i++;
