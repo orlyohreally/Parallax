@@ -19,20 +19,17 @@ header .menu {
 	width: 60%;
 	right: 10%;
 	display: block;
+	
 }
 header .menu .toggle {
 	display: none;
 }
 header .menu a {
-	display: inline-block;
-	padding: 20px 10px;
-	padding-left: 0;
-	vertical-align: middle;
 	font-size: 100%;
 	color: #ffffff;
-	float: right;
 	text-decoration: none;
 }
+
 header .header {
 	width: 100%;
 	height: 100%;
@@ -83,6 +80,57 @@ header .header .phone {
 	right: 15%;
 	top: 15%;
 	position: absolute;
+}
+
+
+@media (max-width: 768px) {
+	header .menu {
+		width: 100%;
+		left: 0;
+		display: block;
+		margin: 0;
+		background: rgba(0, 0, 0, 0.7);
+		overflow: hidden;
+		position: fixed;
+		z-index: 100;
+	}
+	
+	header .menu a {
+		width: 100%;
+		margin: 0;
+		padding: 10px;
+		display: none;
+		float: none;
+		background: #000000;
+	}
+	
+	header .menu a:hover, header .menu .toggle:hover {
+		background: #232323;
+	}
+	header .header .phone {
+		display: none;
+	}
+	header .menu .toggle {
+		display: block;
+		height: 30px;
+		width: auto;
+		padding: 5px;
+		margin: 5px;
+		margin-top: 10px;
+	}
+	header .header .description h1, header .header .description p {
+		width: 100%;
+	}
+}
+
+@media (min-width: 769px) {
+	header .menu a {
+		display: inline-block;
+		padding: 20px 10px;
+		padding-left: 0;
+		vertical-align: middle;
+		float: right;
+	}
 }
 
 #service {
@@ -190,6 +238,25 @@ header .header .phone {
 	margin: 0;
 	padding: 0;
 }
+
+@media (max-width: 425px) {
+	.services .service {
+		width: 100%;
+		padding-top: 20px;
+	}
+	.services .service:first-child {
+		padding-top: 0;
+	}
+	
+	.why-us .reasons {
+		position: relative;
+		width: 100%;
+	}
+	.why-us .phones {
+		width: 100%;
+	}
+}
+
 #about {
 	margin: 5% 10%;
 	width: 80%;
@@ -415,41 +482,7 @@ footer .footer h1 {
 	color: #000000;
 }
 @media (max-width: 768px) {
-	header .menu {
-		width: 100%;
-		left: 0;
-		display: block;
-		margin: 0;
-		background: #000000;
-		overflow: hidden;
-		position: fixed;
-		z-index: 100;
-	}
 	
-	header .menu a {
-		width: 100%;
-		margin: 0;
-		padding: 10px;
-		display: none;
-		float: none;
-	}
-	header .menu a:hover, header .menu .toggle:hover {
-		background: #232323;
-	}
-	header .header .phone {
-		display: none;
-	}
-	header .menu .toggle {
-		display: block;
-		height: 30px;
-		width: auto;
-		padding: 5px;
-		margin: 5px;
-		margin-top: 10px;
-	}
-	header .header .description h1, header .header .description p {
-		width: 100%;
-	}
 	
 	.reasons .reason, .reasons .reason h2 span {
 		font-size: 80%;

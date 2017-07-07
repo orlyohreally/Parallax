@@ -1,8 +1,24 @@
 $(window).ready(function(){
-	$(".menu a").click(function(){
-		$("header .menu a").css({
-			'display':'none'
+	if($(window).innerWidth() <= 768 ) {
+		
+		$(".menu a").click(function(){
+			$("header .menu a").css({
+				'display':'none'
+			})
 		})
+	}
+	$(window).resize(function() {
+		console.log("resizing");
+		if($(window).innerWidth() > 768) {
+			$("header .menu a").css({
+				'display':'inline-block'
+			})
+		}
+		else {
+			$("header .menu a").css({
+				'display':'none'
+			})
+		}
 	})
 	$(".toggle").click(function(){
 		if($("header .menu a")[0].style.display == 'none' || $("header .menu a")[0].style.display == '') {
