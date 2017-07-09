@@ -490,6 +490,7 @@ footer .footer h1 {
 	border-radius: 10%;
 	text-decoration: none;
 	color: #000000;
+	display: inline-block;
 }
 @media (max-width: 768px) {
 	
@@ -502,9 +503,9 @@ footer .footer h1 {
 	}
 	#contacts .contacts .contact {
 		margin: 0;
-		width: 30%;
+		width: 80%;
 		font-size: 90%;
-		margin: 0%;
+		margin-bottom: 10px;
 		display: inline-block;
 	}
 	#contacts .contacts .contact:last-child {
