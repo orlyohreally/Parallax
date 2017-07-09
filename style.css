@@ -6,3 +6,60 @@ html, body {
 	font-family: 'Roboto Condensed', sans-serif;
 	touch-action: manipulation;
 }
+.wrapper {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+header {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: url("assets/andyone-26591.jpg") no-repeat 50% 50%;
+	background-size: cover;
+	position: relative;
+}
+header  h1 {
+	margin: 0;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 400%;
+	text-align: center;
+	padding-top: 30%;
+}
+header .arrow {
+	position: absolute;
+	width: 10%;
+	bottom: 2%;
+	left: 45%;
+}
+.websites {
+	margin: 5% 0%;
+	width: 100%;
+	
+}
+.websites .website {
+	
+	display: block;
+	margin-left: 0;
+}
+.websites .website:last-child {
+	margin-right: 0;
+}
+.websites .website a {
+	display: inline-block;
+	width: 60%;
+}
+.websites .website img {
+	width: 100%;
+	
+}
+.websites .website .description {
+	width: 39%;
+	display: inline-block;
+	vertical-align: top;
+}
+.website .description h1 {
+	margin-top: 0;
+}
