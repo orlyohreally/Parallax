@@ -4,6 +4,7 @@ html, body {
 	height: 100%;
 	width: 100%;
 	font-family: 'Roboto Condensed', sans-serif;
+	touch-action: manipulation;
 }
 header {
 	width: 100%;
