@@ -1,4 +1,7 @@
 $(window).ready(function(){
+	$(".reviews").owlCarousel();
+	$(".articles").owlCarousel();
+	
 	if($(window).innerWidth() <= 768 ) {
 		
 		$(".menu .links a").click(function(){
