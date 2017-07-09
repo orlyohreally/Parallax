@@ -1,8 +1,8 @@
 $(window).ready(function(){
 	if($(window).innerWidth() <= 768 ) {
 		
-		$(".menu a").click(function(){
-			$("header .menu a").css({
+		$(".menu .links a").click(function(){
+			$("header .menu .links a").css({
 				'display':'none'
 			})
 		})
@@ -10,25 +10,25 @@ $(window).ready(function(){
 	$(window).resize(function() {
 		console.log("resizing");
 		if($(window).innerWidth() > 768) {
-			$("header .menu a").css({
+			$(".menu .links a").css({
 				'display':'inline-block'
 			})
 		}
 		else {
-			$("header .menu a").css({
+			$(".menu .links a").css({
 				'display':'none'
 			})
 		}
 	})
 	$(".toggle").click(function(){
-		if($("header .menu a")[0].style.display == 'none' || $("header .menu a")[0].style.display == '') {
-			$("header .menu a").each(function(i) {
-				$("header .menu a")[i].style.display = 'block';
+		if($(".menu .links a")[0].style.display == 'none' || $(".menu .links a")[0].style.display == '') {
+			$(".menu .links a").each(function(i) {
+				$(" .menu .links a")[i].style.display = 'block';
 			})
 		}
-		else if($("header .menu a")[0].style.display != 'none') {
-			$("header .menu a").each(function(i) {
-				$("header .menu a")[i].style.display = 'none';
+		else if($(".menu .links a")[0].style.display != 'none') {
+			$(".menu .links a").each(function(i) {
+				$(".menu .links a")[i].style.display = 'none';
 			})
 		}
 	})
@@ -36,7 +36,7 @@ $(window).ready(function(){
 	$('.reason h2 img').each(function(i){
 		i++;
 		$('.reason-' + i + ' h2 img').click(function(){
-			if($('.reason-' + i + ' p')[0].style.display == "block")
+			if($('.reason-' + i + ' p')[0].style.display == "inline-block")
 				hideReason(i);
 			else 
 				showReason(i);
@@ -45,7 +45,7 @@ $(window).ready(function(){
 		
 	function showReason(i) {
 		$('.reason-' + i + ' p').css({
-			'display': 'block'
+			'display': 'inline-block'
 		});
 		$('.reason-' + i + ' h2 .number').css({
 			'background': '#5771e9'
@@ -55,7 +55,7 @@ $(window).ready(function(){
 			'-webkit-transform': 'rotate(180deg)',
 			'-o-transform': 'rotate(180deg)',
 			'-moz-transform': 'rotate(180deg)',
-			'transform': 'rotate(180deg)'
+			'transform': 'rotate(180deg)',
 		})
 	}
 	function hideReason(i) {
