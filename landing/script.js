@@ -1,6 +1,10 @@
 $(window).ready(function(){
-	$(".reviews").owlCarousel();
-	$(".articles").owlCarousel();
+	$(".reviews").owlCarousel({
+		lazyLoad: true
+	});
+	$(".articles").owlCarousel({
+		lazyLoad: true
+	});
 	
 	if($(window).innerWidth() <= 768 ) {
 		
