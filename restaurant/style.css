@@ -1,0 +1,165 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Open Sans Light', sans-serif;
+}
+.wrapper {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+header {
+	width: 100%;
+	height: 100%;
+	min-height: 590px;
+	margin: 0;
+	padding: 0;
+	background: url("assets/header-background.png")50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header-background h2 {
+	text-align: center;
+	margin: 0% 10%;
+	padding: 0;
+	font-size: 200%;
+	color: #f2e5b3;
+}
+.header-background {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+	display: inline-block;
+	margin: 1%;
+	float: left;
+}
+.logo a {
+	display: block;
+}
+.buttons {
+	display: block;
+	width: 100%;
+	padding: 0;
+	font-size: 120%;
+	text-align: center;
+}
+.button {
+	display: inline-block;
+	margin: 5% 2.5%;
+	border-radius: 50px;
+	padding: 20px;
+	color: #000000;
+	text-decoration: none;
+}
+.buttons .reservation{
+	background: #f2e5b3;
+}
+.buttons .menu {
+	background: #c69c6d;
+}
+.links li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 120%;
+}
+.links a {
+	text-decoration: none;
+	color: #f2e5b3;
+}
+.menu-links {
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	color: #ffffff;
+}
+.header-background h1 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	font-family: 'Dancing Script', cursive;
+}
+@media(min-width: 769px) {
+	.header-background h1 {
+		padding-top: 15%;
+	}
+	.toggle {
+		display: none;
+	}	
+	.menu-links {
+		color: #ffffff;
+		background: none;
+	}
+	header ul {
+		float: right;
+	}
+
+	.links li{
+		padding-right: 10px;
+		padding-bottom: 20px;
+		font-size: 120%;
+	}
+	.header-background h1 {
+		font-size: 1000%;
+	}
+}
+@media(max-width: 768px) {
+	.header-background h1 {
+		padding-top: 15%;
+	}
+	.logo {
+		float: none;
+		margin: 2%;
+	}
+	.logo img {
+		height: 50px;
+		width: auto;
+	}
+	.toggle {
+		display: inline-block;
+		margin: 2%;
+		float: right;
+	}
+	.links {
+		display: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.links .link {
+		width: 100%;
+		margin: 0;
+		padding: 10px;
+	}
+	.menu-links {
+		background: rgba(0, 0, 0, 0.8);
+	}
+	header h1 {
+		font-size: 800%;
+	}
+}
+@media (max-width: 425px) {
+	header h1 {
+		font-size: 500%;
+		padding-top: 30%!important;
+		padding-bottom: 5%!important;
+	}
+	header h2 {
+		font-size: 120%!important;
+	}
+	.buttons {
+		font-size: 90%!important;
+	}
+}
