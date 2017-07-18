@@ -1,28 +1,29 @@
 function getDishes() {
 	console.log(this);
 }
+$(window).scroll(function() {
+	var scrolled = $(this).scrollTop();
+	if(scrolled > $('.menu-links').innerHeight()) {
+		console.log("out scrolled");
+		$('.menu-links').css({
+			'background': 'rgba(0, 0, 0, 0.8)'
+		})
+	}
+	else if($(window).innerWidth() > 768){
+		console.log("not enough scrolled");
+		$('.menu-links').css({
+			'background': 'none'
+		})
+	}
+	if($(window).innerWidth() == 768){
+		$('.menu-links').css({
+			'background': 'rgba(0, 0, 0, 0.8)'
+		})
+	}
+})
+
 $(window).ready(function(){
 	
-	$(window).scroll(function() {
-		var scrolled = $(this).scrollTop();
-		if(scrolled > $('.menu-links').innerHeight()) {
-			console.log("out scrolled");
-			$('.menu-links').css({
-				'background': 'rgba(0, 0, 0, 0.8)'
-			})
-		}
-		else if($(window).innerWidth() > 768){
-			console.log("not enough scrolled");
-			$('.menu-links').css({
-				'background': 'none'
-			})
-		}
-		if($(window).innerWidth() == 768){
-			$('.menu-links').css({
-				'background': 'rgba(0, 0, 0, 0.8)'
-			})
-		}
-	})
 	$(window).resize(function(){
 		if($(window).innerWidth() > 768) {
 			$(".links").each(function(i) {

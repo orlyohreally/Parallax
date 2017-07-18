@@ -65,6 +65,14 @@ header {
 	color: #000000;
 	text-decoration: none;
 }
+
+#menu .button {
+	background: #c69c6d;
+	padding: 10px 20px;
+	float: right;
+	width: 30%;
+	text-align: center;
+}
 .buttons .reservation{
 	background: #f2e5b3;
 }
@@ -168,11 +176,9 @@ section {
 	text-decoration: none;
 	list-style-type: none;
 	margin: 0;
+	width: 100%;
 	display: inline-block;
 	text-align: center;
-}
-.dishes-list .dish img {
-	width: 100%;
 }
 @media(min-width: 769px) {
 	.header-background h1 {
@@ -337,11 +343,24 @@ section {
 		background: #f2e5b3;
 	}
 	.dishes-list {
-		-webkit-column-count: 1; /* Chrome, Safari, Opera */
-		-moz-column-count: 1; /* Firefox */
-		column-count: 1;
+		column-width: 100%;
+		column-count: auto;
+		-webkit-column-gap: 0; /* Chrome, Safari, Opera */
+		-moz-column-gap: 0; /* Firefox */
+		column-gap: 0;
 	}
-	
+	.dishes-list .dish {
+		width: 100%;
+	}
+	.dishes-list .dish img {
+		width: 100%;
+	}
+	#menu .button {
+		width: 80%;
+		padding-right: 5%;
+		padding-left: 5%;
+		float: none;
+	}
 }
 @media (max-width: 320px) {
 	.header-background h1 {
