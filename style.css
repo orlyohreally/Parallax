@@ -53,12 +53,12 @@ header .arrow {
 }
 .websites .website img {
 	width: 100%;
-	
 }
 .websites .website .description {
-	width: 39%;
+	width: 35%;
 	display: inline-block;
 	vertical-align: top;
+	margin-left: 4%;
 }
 .website .description h1 {
 	margin-top: 0;
