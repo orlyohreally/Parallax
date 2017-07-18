@@ -1,4 +1,8 @@
+function getDishes() {
+	console.log(this);
+}
 $(window).ready(function(){
+	
 	$(window).scroll(function() {
 		var scrolled = $(this).scrollTop();
 		if(scrolled > $('.menu-links').innerHeight()) {
