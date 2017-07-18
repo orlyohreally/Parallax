@@ -47,7 +47,7 @@ header .arrow {
 .websites .website:last-child {
 	margin-right: 0;
 }
-.websites .website a {
+.websites .website .preview {
 	display: inline-block;
 	width: 60%;
 }
@@ -63,12 +63,18 @@ header .arrow {
 .website .description h1 {
 	margin-top: 0;
 }
-
+.website .description a {
+	text-decoration: none;
+	color: #000000;
+}
+.website .description a:hover {
+	color: rgba(0, 0, 0 ,0.7);
+}
 @media (max-width: 425px) {
 	header  h1 {
 		font-size: 300%;
 	}
-	.websites .website a {
+	.websites .website .preview {
 		width: 100%;
 	}
 	.websites .website .description {
