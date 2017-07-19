@@ -111,10 +111,26 @@
 				</li>
 				
 			</ul>
-			<a href = " " class = "button">Подробнее</a>
+			<div class = "action"><a href = " " class = "button">Подробнее</a></div>
 		</section>
+		<section id = "reservation">
+			<div class = "banner">
+				<form name = "reservation-form">
+					<h1>Зарезервировать столик</h1>
+					<input required = true name = "name" placeholder = "Фамилия Имя"/>
+					<input required = true type = "tel" name = "phone" placeholder = "Телефон"/>
+					<input type = "e-mail" name = "email" placeholder = "E-mail"/>
+					<input required = true onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" type = "number" name = "persons" placeholder = "Число людей"/>
+					<input required = true type = "date" name = "date" placeholder = "Дата"/>
+					<input required = true type = "time" name = "time" placeholder = "Время"/>
+					<textarea placeholder = "Сообщение с Вашими пожеланиями" rows = "5" name = "message"></textarea>
+					<div class = "action-button"><button class = "button">Зарезервировать</button></div>
+				</form>
+			</div>
+		</section>
+		<section id = "chefs" style = "height: 100px;">
 		
-		
+		</section>
 		
 	</div>
 
