@@ -1,6 +1,3 @@
-function getDishes() {
-	console.log(this);
-}
 $(window).scroll(function() {
 	var scrolled = $(this).scrollTop();
 	if(scrolled > $('.menu-links').innerHeight()) {
@@ -53,4 +50,61 @@ $(window).ready(function(){
 			})
 		}
 	})
+	var currentSlide = 1;
+	console.log($(".event").length);
+	$("#events .left-arrow").click(function(){
+		currentSlide--;
+		shiftSlide();
+		
+	})
+	$("#events .right-arrow").click(function(){
+		currentSlide++;
+		shiftSlide();
+	})
+	function dotClicked(i) {
+		currentSlide = i;
+		shiftSlide();
+	}
+	var i;
+	$(".dot").each(function(i){
+		$(".dot-" + (i + 1)).click(function(){
+			dotClicked(i + 1);
+		})
+	})
+	function shiftSlide() {
+		$("#events .events .event").css({
+			"display": 'none'
+		})
+		$(".nav .dot").css({
+			'background': '#ffffff'
+		})
+		$(".dot-" + currentSlide).css({
+			'background': '#666666'
+		})
+		$(".event-" + currentSlide).css({
+			'display': 'block'
+		})
+		
+		if(currentSlide >= $(".event").length) {
+			$(".right-arrow").css({
+				'display': 'none'
+			})
+		}
+		if(currentSlide < $(".event").length) {
+			$(".right-arrow").css({
+				'display': 'block'
+			})
+		}
+		if(currentSlide <= 1){
+			$(".left-arrow").css({
+				'display': 'none'
+			})
+		}
+		else
+		{
+				$(".left-arrow").css({
+				'display': 'block'
+			})
+		}
+	}
 })

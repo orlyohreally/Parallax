@@ -249,6 +249,82 @@ form button {
 .chefs .chef h3, .chefs .chef h4 {
 	text-align: center;
 }
+#events {
+	margin-right: -12.5%;
+	margin-left: -13%;
+	position: relative;
+}
+#events .events h1, #events .events h2 {
+	color: #ffffff;
+	margin: 0% 10%;
+	padding: 5% 2%;
+}
+#events .event h2 {
+	padding-top: 0;
+	font-family: 'Open Sans Light', sans-serif;
+}
+.events .event-1 {
+	background: url("assets/event1.png") no-repeat 50% 50%;
+	background-size: 100% auto;
+}
+.events .event-2 {
+	background: url("assets/event2.png") no-repeat 50% 50%;
+	background-size: 100%;
+	display: none;
+}
+.events .event-3 {
+	background: url("assets/event3.png") no-repeat 50% 50%;
+	background-size: 100%;
+	display: none;
+}
+.transparent-background {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+#events .right-arrow, #events .left-arrow {
+	position: absolute;
+}
+#events .right-arrow {
+	right: 0.5%;
+	top: 40%
+}
+#events .left-arrow {
+	left: 0.5%;
+	top: 40%;
+	display: none;
+}
+#events .right-arrow img {
+	transform: rotate(90deg);
+}
+#events .left-arrow img {
+	transform: rotate(-90deg);
+}
+.nav {
+	position: absolute;
+	bottom: 1.5%;
+	display: block;
+	right: 0;
+	left: 0;
+	text-align: center;
+}
+.nav .dot {
+	display: inline-block;
+	margin-right: 10px;
+}
+.nav .dot {
+	border-radius: 50%;
+	background: #ffffff;
+}
+.nav .dot:last-child {
+	margin-right: 0;
+}
+.nav .dot-1 {
+	background: #666666;
+}
+.nav .dot:hover {
+	background: #666666;
+}
 @media(min-width: 769px) {
 	.header-background h1 {
 		padding-top: 15%;
@@ -261,7 +337,7 @@ form button {
 	}	
 	.menu-links {
 		color: #ffffff;
-		background: none;
+		//background: none;
 	}
 	header ul {
 		float: right;
@@ -321,6 +397,23 @@ form button {
 		margin: 2% auto;
 	}
 	
+	#events .events h1{
+		font-size: 270%;
+	}
+	#events .events h2{
+		font-size: 190%;
+	}
+	
+	#events .right-arrow img {
+		height: 100px;
+	}
+	#events .left-arrow img {
+		height: 100px;
+	}
+	.nav .dot {
+		width: 20px;
+		height: 20px;
+	}
 }
 @media(max-width: 768px) {
 	.header-background h1 {
@@ -356,7 +449,7 @@ form button {
 		padding: 10px;
 	}
 	.menu-links {
-		background: rgba(0, 0, 0, 0.8);
+		//background: rgba(0, 0, 0, 0.8);
 	}
 	.header-background h1 {
 		font-size: 800%;
@@ -419,6 +512,26 @@ form button {
 	.chefs .chef img {
 		max-width: 300px;
 	}
+	
+	#events .events h1{
+		font-size: 140%;
+	}
+	#events .events h2 {
+		padding-top: 0;
+		font-size: 120%;
+	}
+	
+
+	#events .right-arrow img {
+		height: 50px;
+	}
+	#events .left-arrow img {
+		height: 50px;
+	}
+	.nav .dot {
+		width: 10px;
+		height: 10px;
+	}
 }
 @media (max-width: 425px) {
 	.header-background h1 {
@@ -480,6 +593,26 @@ form button {
 	#reservation form button {
 		font-size: 120%;
 	}
+	
+	#events .events h1{
+		font-size: 120%;
+	}
+	#events .events h2 {
+		padding-top: 0;
+		font-size: 80%;
+	}
+	
+
+	#events .right-arrow img {
+		height: 50px;
+	}
+	#events .left-arrow img {
+		height: 50px;
+	}
+	.nav .dot {
+		width: 10px;
+		height: 10px;
+	}
 }
 @media (max-width: 320px) {
 	.header-background h1 {
@@ -509,5 +642,25 @@ form button {
 	}
 	#reservation form button {
 		font-size: 80%;
+	}
+	
+	#events .events h1{
+		font-size: 90%;
+	}
+	#events .events h2 {
+		padding-top: 0;
+		font-size: 80%;
+	}
+	
+
+	#events .right-arrow img {
+		height: 50px;
+	}
+	#events .left-arrow img {
+		height: 50px;
+	}
+	.nav .dot {
+		width: 10px;
+		height: 10px;
 	}
 }
