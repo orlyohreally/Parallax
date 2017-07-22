@@ -101,6 +101,7 @@ header {
 	margin: 0;
 	position: fixed;
 	color: #ffffff;
+	z-index: 1000;
 }
 .header-background h1 {
 	text-align: center;
@@ -353,6 +354,51 @@ form button {
 	vertical-align: middle;
 	margin: 0;
 }
+#find-us {
+	margin-left: -12.5%;
+}
+#find-us .location-list {
+	display: inline-block;
+	background: url("assets/location-background.png") 50% 50% no-repeat;
+	width: 40%;
+	z-index: 10;
+	margin: 0;
+	color: #ffffff;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+}
+#find-us .location-list .transparent-background {
+	margin-bottom: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+#find-us .location-list h1 {
+	margin: 0;
+	margin-bottom: 10%;
+	padding: 10px 20px;
+}
+#find-us .location-list h2 {
+	margin: 0;
+	padding: 10px 20px;
+}
+
+
+
+footer .copyright {
+	width: 100%;
+	margin: 0;
+	background: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+	padding: 10px 20px;
+}
+footer .copyright h5 {
+	
+	text-align: center;
+	vertical-align: middle;
+	margin: 0;
+}
 @media(min-width: 769px) {
 	.header-background h1 {
 		padding-top: 15%;
@@ -446,6 +492,28 @@ form button {
 		width: 29%;
 		margin: 2% 5%;
 		margin-left: 0;
+	}
+	
+	
+	#find-us .location-list {
+		min-height: 600px;
+	}
+	
+	#find-us .location-list h1 {
+		font-size: 200%;
+	}
+	#find-us .location-list h2 {
+		font-size: 140%;
+	}
+	
+	#find-us .location-list {
+		min-height: 600px;
+	}
+	
+	
+	
+	footer .copyright h5 {
+		font-size: 150%;
 	}
 }
 @media(max-width: 768px) {
@@ -580,6 +648,13 @@ form button {
 		margin: 2% 5%;
 		margin-left: 0;
 	}
+	
+	#find-us .location-list h1 {
+		font-size: 150%;
+	}
+	#find-us .location-list {
+		min-height: 600px;
+	}
 }
 @media (max-width: 425px) {
 	.header-background h1 {
@@ -666,6 +741,15 @@ form button {
 	.results .result {
 		width: 100%;
 		margin: 2% 0%;
+	}
+	#find-us .location-list{
+		width: 112%;
+	}
+	#find-us .location-list h1 {
+		font-size: 180%;
+	}
+	#find-us .location-list {
+		min-height: 350px;
 	}
 }
 @media (max-width: 320px) {
