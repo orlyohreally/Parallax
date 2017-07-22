@@ -325,6 +325,34 @@ form button {
 .nav .dot:hover {
 	background: #666666;
 }
+
+#results {
+	width: 100%;
+}
+#results .results {
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.results .result {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+#results .results .result-3 {
+	margin-right: 0;
+}
+.results img {
+	display: inline-block;
+	vertical-align: text-top;
+}
+.results h1 {
+	display: inline-block;
+	padding-left: 10px;
+	vertical-align: middle;
+	margin: 0;
+}
 @media(min-width: 769px) {
 	.header-background h1 {
 		padding-top: 15%;
@@ -413,6 +441,11 @@ form button {
 	.nav .dot {
 		width: 20px;
 		height: 20px;
+	}
+	.results .result {
+		width: 29%;
+		margin: 2% 5%;
+		margin-left: 0;
 	}
 }
 @media(max-width: 768px) {
@@ -532,6 +565,21 @@ form button {
 		width: 10px;
 		height: 10px;
 	}
+	
+	#results .results h1 {
+		font-size: 150%;
+	}
+	#results .results h2 {
+		font-size: 100%;
+	}
+	#results .result img {
+		height: 25px;
+	}
+	.results .result {
+		width: 29%;
+		margin: 2% 5%;
+		margin-left: 0;
+	}
 }
 @media (max-width: 425px) {
 	.header-background h1 {
@@ -613,6 +661,12 @@ form button {
 		width: 10px;
 		height: 10px;
 	}
+	
+	
+	.results .result {
+		width: 100%;
+		margin: 2% 0%;
+	}
 }
 @media (max-width: 320px) {
 	.header-background h1 {
@@ -662,5 +716,11 @@ form button {
 	.nav .dot {
 		width: 10px;
 		height: 10px;
+	}
+	
+	.results .result {
+		width: 100%;
+		margin: 2% 0%;
+		margin-left: 0;
 	}
 }
