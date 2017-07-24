@@ -356,6 +356,7 @@ form button {
 }
 #find-us {
 	margin-left: -12.5%;
+	margin-bottom: 0;
 }
 #find-us .location-list {
 	display: inline-block;
@@ -369,10 +370,11 @@ form button {
 	text-align: center;
 }
 #find-us .location-list .transparent-background {
-	margin-bottom: 100%;
 	position: absolute;
 	top: 0;
 	bottom: 0;
+	
+	
 }
 #find-us .location-list h1 {
 	margin: 0;
@@ -385,13 +387,76 @@ form button {
 }
 
 
+footer {
+	width: 100%;
+	margin: 0;
+	display: block;
+	background: rgba(68, 64, 64, 0.93);
+	color: #ffffff;
+}
+footer .info {
+	padding: 5% 10%;
+	margin: 0;
+}
+footer .contacts {
+	display:inline-block;
+	width: 31%;
+	margin-right: 2%;
+}
+footer .contacts .logo-img {
+	height: 30px;
+	margin: 0 20px 0 0;
+	display: inline-block;
+}
+.logo-img img {
+	height: 100%;
+	width: auto;
+}
+.contacts .phone img, .contacts .mail img  {
+	height: 15px;
+}
+.contacts .phone, .contacts .mail {
+	margin: 15px 0px;
+	display: block;
+	width: 100%;
+}
+.timetable {
+	width: 31%;
+	display: inline-block;
+	margin-right: 2%;
+	vertical-align: top;
+}
+.instagram {
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+}
 
+.info h2 {
+	text-align: center;
+	font-size: 165%;
+	margin: 0;
+	vertical-align: bottom;
+	margin-bottom: 7.5px;
+}
+.info h5{
+	display: inline-block;
+	margin: 0;
+	vertical-align: bottom;
+	margin-left: 5px;
+	font-size: 100%;
+}
+.info .timetable h5, .info .instagram h5 {
+	text-align: center;
+	width: 100%;
+	margin: 7.5px 0;
+}
 footer .copyright {
 	width: 100%;
 	margin: 0;
 	background: rgba(0, 0, 0, 0.7);
 	color: #ffffff;
-	padding: 10px 20px;
+	padding: 10px 0px;
 }
 footer .copyright h5 {
 	
@@ -399,6 +464,7 @@ footer .copyright h5 {
 	vertical-align: middle;
 	margin: 0;
 }
+
 @media(min-width: 769px) {
 	.header-background h1 {
 		padding-top: 15%;
