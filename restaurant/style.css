@@ -357,6 +357,14 @@ form button {
 #find-us {
 	margin-left: -12.5%;
 	margin-bottom: 0;
+	width: 125%;
+}
+#map {
+	margin-left: -1.5%;
+	background: #000000;
+	display: inline-block;
+	width: 61.05%;
+	position: relative;
 }
 #find-us .location-list {
 	display: inline-block;
@@ -398,58 +406,43 @@ footer .info {
 	padding: 5% 10%;
 	margin: 0;
 }
-footer .contacts {
-	display:inline-block;
-	width: 31%;
-	margin-right: 2%;
-}
-footer .contacts .logo-img {
-	height: 30px;
-	margin: 0 20px 0 0;
-	display: inline-block;
-}
+
 .logo-img img {
 	height: 100%;
 	width: auto;
 }
-.contacts .phone img, .contacts .mail img  {
-	height: 15px;
-}
 .contacts .phone, .contacts .mail {
-	margin: 15px 0px;
 	display: block;
 	width: 100%;
 }
-.timetable {
-	width: 31%;
-	display: inline-block;
-	margin-right: 2%;
-	vertical-align: top;
-}
-.instagram {
-	width: 32%;
-	display: inline-block;
-	vertical-align: top;
-}
-
-.info h2 {
+.info h2, footer .logo h2 {
 	text-align: center;
-	font-size: 165%;
 	margin: 0;
+	margin-bottom: 5%;
 	vertical-align: bottom;
-	margin-bottom: 7.5px;
+	color: #f2e5b3;
 }
 .info h5{
 	display: inline-block;
 	margin: 0;
 	vertical-align: bottom;
 	margin-left: 5px;
-	font-size: 100%;
+	margin-bottom: 3%;
 }
+
+footer .logo {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+footer .logo h2 {
+	font-family: 'Dancing Script', cursive;
+	text-align: left;
+}
+
 .info .timetable h5, .info .instagram h5 {
 	text-align: center;
 	width: 100%;
-	margin: 7.5px 0;
 }
 footer .copyright {
 	width: 100%;
@@ -459,7 +452,6 @@ footer .copyright {
 	padding: 10px 0px;
 }
 footer .copyright h5 {
-	
 	text-align: center;
 	vertical-align: middle;
 	margin: 0;
@@ -561,8 +553,11 @@ footer .copyright h5 {
 	}
 	
 	
-	#find-us .location-list {
-		min-height: 600px;
+	#find-us .location-list, #map {
+		height: 600px;
+	}
+	#find-us {
+		height: 600px;
 	}
 	
 	#find-us .location-list h1 {
@@ -572,10 +567,38 @@ footer .copyright h5 {
 		font-size: 140%;
 	}
 	
-	#find-us .location-list {
-		min-height: 600px;
+		
+	footer .contacts {
+		display:inline-block;
+		width: 31%;
+		margin-right: 2%;
 	}
-	
+	footer .contacts .logo-img {
+		height: 30px;
+		margin: 0 20px 0 0;
+		display: inline-block;
+	}
+	.contacts .phone img, .contacts .mail img  {
+		height: 10px;
+	}
+	.instagram {
+		width: 31%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.timetable {
+		width: 31%;
+		display: inline-block;
+		margin-right: 2%;
+		vertical-align: top;
+	}
+	.info h2, footer .logo h2 {
+		font-size: 165%;
+	}
+	.info h5{
+		font-size: 100%;
+	}
+
 	
 	
 	footer .copyright h5 {
@@ -718,9 +741,47 @@ footer .copyright h5 {
 	#find-us .location-list h1 {
 		font-size: 150%;
 	}
-	#find-us .location-list {
-		min-height: 600px;
+	#find-us, #map {
+		height: 600px;
 	}
+	#map {
+		margin-left: -1%;
+		width: 60.4%;
+	}
+	#find-us .location-list {
+		height: 600px;
+	}
+	
+		
+	footer .info h2 {
+		font-size: 90%;
+	}
+	footer .info h5 {
+		font-size: 60%;
+	}
+	.contacts .phone img, .contacts .mail img  {
+		height: 5px;
+	}
+	footer .contacts .logo-img {
+		height: 30px;
+	}
+	
+	footer .contacts {
+	display:inline-block;
+	width: 31%;
+	margin-right: 2%;
+}
+footer .instagram {
+	width: 31%;
+	display: inline-block;
+	vertical-align: top;
+}
+footer .timetable {
+	width: 31%;
+	display: inline-block;
+	margin-right: 2%;
+	vertical-align: top;
+}
 }
 @media (max-width: 425px) {
 	.header-background h1 {
@@ -808,14 +869,36 @@ footer .copyright h5 {
 		width: 100%;
 		margin: 2% 0%;
 	}
-	#find-us .location-list{
-		width: 112%;
+	#find-us {
+		height: 700px;
 	}
 	#find-us .location-list h1 {
 		font-size: 180%;
 	}
-	#find-us .location-list {
-		min-height: 350px;
+	#find-us .location-list, #map {
+		height: 350px;
+		width: 112%;
+		margin-left: 0;
+	}
+	#map {
+		margin-top: -5px;
+	}
+	footer .contacts, footer .timetable, footer .instagram {
+		width: 100%;
+		margin: 3% 0;
+		text-align: center;
+	}
+	footer .logo h2{
+		text-align: center;
+	}
+	footer .info h2 {
+		font-size: 130%;
+	}
+	footer .info h5 {
+		font-size:90%;
+	}
+	.contacts .phone img, .contacts .mail img  {
+		height: 10px;
 	}
 }
 @media (max-width: 320px) {
