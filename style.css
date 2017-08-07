@@ -34,6 +34,26 @@ header .arrow {
 	bottom: 2%;
 	left: 45%;
 }
+header .menu {
+	width: 100%;
+	margin: 0;
+	position:fixed;
+}
+header .main-menu {
+	display: block;
+	float: right;
+}
+header .main-menu li:first-child {
+	padding-left: 0;
+}
+header .main-menu li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0;
+	color: #ffffff;
+	font-size: 130%;
+}
 .websites {
 	margin: 5% 0%;
 	width: 100%;
