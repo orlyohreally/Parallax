@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title>Orly Knop | Portfolio</title>
+	<title>Орли Кноп | Портфолио</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,44 +9,99 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
 	<script src ="script.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Russo+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn" rel="stylesheet">
 	<link href="style.css" type="text/css" rel="stylesheet">
 
 </head>
 <body>
 	<header>
-		<!--<div class = "menu">
-			<ul class = "main-menu">
-				<li>Образование</li>
-				<li>Навыки</li>
-				<li>Проекты</li>
-			</ul>
-		</div>-->
-		<h1>Web development</h1>
-		<img class = "arrow" src = "assets/arrow.png"></img>
-	</header>
-	<div class = "wrapper">
-	<section id = "education">
-		<h1>Образование</h1>
-		<ul class = "education-list">
-			<li class = "education">
-				<h2>Школа №</h2>
-				<p>Среднее образование профиль</p>
-			</li>
-			<li class = "education">
-				<h2>Университет</h2>
-				<p>Высшее образование профиль</p>
-				<h3>Курсовые работы</h3>
-				<ul class = "course-project-list">
-					<li>3 курс</li>
-					<li>4 курс</li>
-				</ul>
-			</li>
+		<div class = "titles">
+		<h1><span>О</span>рли <span>К</span>ноп</h1>
+		<h2>веб-разработчик</h2>
 		</div>
-	</section>
-	
-	<footer>
-	
-	</footer>
+		<div class = "icons">
+			<div class = "icon">
+				
+				<div class = "icon-img" id = "projects">
+					
+					<a href = "#"><img src = "assets/projects.png"></img></a>
+					<a href = "#"><h3>Проекты</h3></a>
+					</div>
+					
+			</div>
+			<div class = "icon">
+				<div class = "icon-img"  id = "blog">
+					<a href = "#" class = "a-img"><img src = "assets/blog.png"></img></a>
+					<a href = "#" class = "a-h3"><h3>Блог</h3></a>
+				</div>
+			</div>
+			<div class = "icon">
+				<div class = "icon-img" id = "resume">
+				<div id = "resume">
+					<a href = "#"><img src = "assets/resume.png"></img></a>
+					<a href = "#"><h3>Резюме</h3></a>
+					
+				</div></div>
+			</div>
+		</div>
+	</header>
+	<div id = "about">
+	<div class = "photo">
+		<div class = "photo-div">
+			<img src = "assets/orlyknop.jpg"></img>
+		</div>
+	</div>
+	<div class = "about-p">
+		<p>
+		Я закончила университет ИТМО в 2017 году. Во время учебы большую часть я занималась изучением различных языков программирования и машинным обучением. Во время практики в качетсве Web-разработчика эта деятельность меня сильно привлекла, и до сих пор этот интерес не пропал. С того времени я успела много чему научиться и делать более примечательные сайты и веб-приложения.
+		</p>
+	</div>
+	</div>
+	<div id = "experience">
+		<div class = "titles">
+			<h1><span>О</span>пыт <span>Р</span>аботы</h1>
+		</div>
+		<div class = "exp itmo">
+			<div class = "titles">
+				<h2>программист</h2>
+				<img src = "assets/itmo.png"></img>
+			</div>
+			<div class = "content">
+			
+			<div class = "exp-p">
+			<p>
+			Создание веб-приложений на основе уже готовых веб-приложений, написанных на PHP или в Application Express Oracle. Использовались технологии такие как PL/SQL Developer, ApEx Oracle, AJAX, JQuery, PHP Storm.
+			</p>
+			</div>
+			<div class = "logos">
+				<img src = "assets/plsql.png"></img>
+				<img src = "assets/oracle.png"></img>
+				<img src = "assets/ajax.png"></img>
+				<img src = "assets/jquery.png"></img>
+			</div>
+			</div>
+		</div>
+		<div class = "exp appomart">
+			<div class = "titles">
+				<h2>практикант</h2>
+				<img src = "assets/appomart.png"></img>
+			</div>
+			<div class = "content">
+			
+			<div class = "exp-p">
+			<p>
+			Программирование мобильного приложения для iOS в Unity на C# с использованием Visual Studio. Для взаимодействия с методами сервера использовался Postman. Также практика содержала задания направленные на прототипирование приложений в Justinmind и написание для них технических заданий.
+			Сертификат о прохождении практики.
+			Интервью, посвященное опыту прохождения практики.
+			</p>
+			</div>
+			<div class = "logos">
+				<img src = "assets/unity.png"></img>
+				<img src = "assets/visual-studio.png"></img>
+				<img src = "assets/postman.png"></img>
+				<img src = "assets/justinmind.png"></img>
+			</div>
+			</div>
+		</div>
 	</div>
 </body>
